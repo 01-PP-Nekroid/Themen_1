@@ -21,3 +21,25 @@ console.log(firstName + familyName);
 console.log(firstName + " " + familyName);
 console.log("Hi, ich bin " + firstName + " " + familyName +"!");
 
+/* 
+   Wertzuweisung II + Datentypen
+   JS ist ein untypisierte Sprache!
+*/
+
+let test; // Deklaration
+console.log("Datentyp: " + typeof test);
+console.log("Inhalt: " + test);
+console.log("-------------");
+test = "hello"; // string
+console.log("Datentyp: " + typeof test);
+console.log("Inhalt: " + test);
+console.log("-------------");
+test = 2; // number
+console.log("Datentyp: " + typeof test);
+console.log("Inhalt: " + test);
+console.log("-------------");
+test = true; // boolean
+console.log("Datentyp: " + typeof test);
+console.log("Inhalt: " + test);
+
+
