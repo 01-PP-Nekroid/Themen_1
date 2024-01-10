@@ -1,5 +1,5 @@
 
-// Zeilenkommentar
+// Zeilenkommentar (Strg + #)
 
 /*
  Block-Kommentar
@@ -9,6 +9,7 @@
 
 // console.log("Hi!"); // Ausgabe
 // console.log(Hi); // Ausgabe
+
 
 /* Deklaration + Wertzuweisung */
 
@@ -20,6 +21,7 @@
 // console.log(firstName + familyName);
 // console.log(firstName + " " + familyName);
 // console.log("Hi, ich bin " + firstName + " " + familyName +"!");
+
 
 /* 
    Wertzuweisung II + Datentypen
@@ -42,13 +44,16 @@
 // console.log("Datentyp: " + typeof test);
 // console.log("Inhalt: " + test);
 
+
 /* Variablen vs. Konstanten in JS */
 
-let test; // Deklaration
-test = "hi"; // Wertzuweisung (Initialisierung)
-test = "hello";
-console.log("Inhalt: " + test);
+// Variable
+// let test; // Variable: Deklaration
+// test = "hi"; // Wertzuweisung (Initialisierung)
+// test = "hello"; // Überschreibung
+// console.log("Inhalt: " + test);
 
-const test2 = "Hi!"; // Deklaration + Wertzuweisung
-test2 = "Hello!";
-console.log("Inhalt: " + test2); // Ausgabe
+// Konstante
+// const test2 = "Hi!"; // Deklaration + Wertzuweisung gemeinsam!
+// test2 = "Hello!"; // Laufzeitfehler!!
+// console.log("Inhalt: " + test2); // Ausgabe
