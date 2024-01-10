@@ -61,8 +61,8 @@ console.log
 (
     "Die Summe ist: " + 
     (
-        parseFloat(prompt("Bitte Zahl 1 eingeben: "));
-        parseFloat(prompt("Bitte Zahl 2 eingeben: "))
+        parseFloat(prompt("Bitte Zahl 1 eingeben: "))
+        //parseFloat(prompt("Bitte Zahl 2 eingeben: "))
 
     )
 );
