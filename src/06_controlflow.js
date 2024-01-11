@@ -84,7 +84,7 @@ else
 // TAB >
 // Shift + TAB <
 
-const firstName = "Jane";
+/*const firstName = "Jane";
 let job;
 
 job = "driver"; // ... fährt als Taxe / Uber
@@ -107,9 +107,28 @@ switch (job)
         break;
         case "teacher":
         case "Instructor":
-        console.log(firstName + " malt ein bild");
+        console.log(firstName + " unterrichtet");
         break;
     default:
         console.log("Jane macht etwas anderes!");
+        break;
+}*/
+
+
+/********  Fallunterscheidung / SWITCH|CASE 2 *******/
+
+const cond = false;
+const value = 2;
+
+switch (cond)
+{
+    case (value == 1):
+        console.log("Der Wert ist 1.");
+        break;
+    case (value == 2):
+        console.log("Der Wert ist 2.");
+        break;
+    default:
+        console.log("Es is kein Gültiger Wert vorhanden.");
         break;
 }
