@@ -18,6 +18,7 @@ console.log("isJohnOlder: " + isJohnOlder);
 console.log("isJohnEqual: " + isJohnEqual);
 console.log("------------------");
 
+
 /************ IF  ************/
 // TINA --> There is no alternative!
 // entweder JA oder nix ... alternativlos
@@ -31,6 +32,7 @@ console.log("------------------");
 /* {
     console.log("John is älter!");
 } */
+
 
 /************ IF - ELSE  ************/
 // mit Alternative  
@@ -49,3 +51,7 @@ else
     console.log("John is jünger!");
 } */
 
+
+/************  Ternäre (ternary) Schreibweise ************/
+
+console.log( (isJohnOlder) ? "John is older" : "Mark is older");
