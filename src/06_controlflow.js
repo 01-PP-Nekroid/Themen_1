@@ -1,7 +1,7 @@
 // Entscheidungsstrukturen | control flow
 
 // Deklaration + Assignment
-const ageJohn = 30;
+/*const ageJohn = 30;
 const ageMark = 30;
 
 // Deklaration
@@ -17,6 +17,7 @@ console.log("ageMark: " + ageMark);
 console.log("isJohnOlder: " + isJohnOlder);
 console.log("isJohnEqual: " + isJohnEqual);
 console.log("------------------");
+*/
 
 
 /************ IF  ************/
@@ -24,6 +25,7 @@ console.log("------------------");
 // entweder JA oder nix ... alternativlos
 // Türsteher-Politik (Doors 10 p.m.)
 // für {} --> AltGr + 7
+// ACHTUNG wenn ; hinter IF wirde {...} immer aktiv
 
 // if (true)
 // if (false)
@@ -60,7 +62,7 @@ else
 
 /************ IF - ELSE IF  ************/
 // mit alternativen Fällen (älter, jünger, gleich alt)
-
+/*
 if (isJohnOlder)
 // Ja Zweig
 {
@@ -75,5 +77,39 @@ else if (isJohnEqual)
 else
 {
     console.log("John is jünger!");
-}
+}*/
 
+
+/****** Fallunterscheidung / SWITCH|CASE 1 ******/
+// TAB >
+// Shift + TAB <
+
+const firstName = "Jane";
+let job;
+
+job = "driver"; // ... fährt als Taxe / Uber
+job = "diver"; // ... taucht
+job = "artist"; // ... alt ein bild
+job = "pilot"; // .. macht etwas anderes! --> default
+job = "teacher"; // .. unterrichtet!
+job = "instructor"; // .. unterrichtet!
+
+switch (job)
+{
+    case "driver":
+        console.log(firstName + " fährt Taxi!");
+        break;
+    case "diver":
+        console.log(firstName + " taucht!");
+        break;
+    case "artist":
+        console.log(firstName + " malt ein bild");
+        break;
+        case "teacher":
+        case "Instructor":
+        console.log(firstName + " malt ein bild");
+        break;
+    default:
+        console.log("Jane macht etwas anderes!");
+        break;
+}
