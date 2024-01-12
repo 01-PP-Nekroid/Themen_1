@@ -40,3 +40,14 @@ function ausgabeNamen2(firstName) // Parameter
     console.log("Hallo, " + firstName);
 }
 
+
+/***** Funktionen 02c *****/
+// 2c. Mehrere Parameter / Argumente
+const prompt = require('prompt-sync')({sigint: true});
+
+ausgabeNamenParams(prompt("Bitte Vorname eingeben: "), prompt("Bitte nachname einbeben: "));
+
+function ausgabeNamenParams(firstName, familyName) // Parameter
+{
+    console.log("Hallo, " + firstName + " " + familyName);
+}
