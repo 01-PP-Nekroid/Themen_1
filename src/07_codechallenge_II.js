@@ -40,3 +40,8 @@ switch (true) {
         console.log("Bitte Tee trinken!");   
         break;
 }
+
+
+/***********Variante 2*********/
+
+// if (age >= 0) && (age <= 5)
