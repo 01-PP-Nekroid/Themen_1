@@ -43,7 +43,11 @@ function multiply(a,b)
 }
 
 
+const ERROR_STR_DIV = /* "Division durch 0 ist nicht definiert." */ "Sie denken, dass Sie diese Aufgabe berechnet haben wollen. Wollen Sie aber nicht!";
+
+
 // module: division a / b |  test
+
 output(divide(4,2));
 output(divide(3,2));
 output(divide(3,-2));
@@ -52,14 +56,11 @@ output(divide(3,0));
 
 function divide(a,b)
 {
-	if (b !== 0) // b != 0 ("!=" bedeutet ungleich)
-	{	
-		return a / b;
-	}
-	else
+	if (b == 0)
 	{
-		return "Division durch 0 ist nicht definiert."
+		return ERROR_STR_DIV; // Ausnahme
 	}
+		return a / b; // Reguläres Verhalten
 }
 
 
