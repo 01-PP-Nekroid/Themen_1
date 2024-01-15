@@ -4,26 +4,48 @@
 /*
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
-1. Dateneingabe + -überprüfung :  
-2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : 
+1. Dateneingabe + -überprüfung : check! / todo! 
+2. Auswahl Rechenart : check
+3. Fkt. Grundrechenarten : check
 4. Ausgabe in Konsole : check
 */
 
+const prompt = require('prompt-sync')({sigint: true});
 
-const ERROR_STR_DIV = /* "Division durch 0 ist nicht definiert." */ "I`m sorry, Dave... I`m afraid. I can`t do that!";
-const ERROR_STR_GEN = /* "Irgendetwas ist schief gegangen! */ "I`m so sorry, Dave..."
+const ERROR_STR_GEN = /* "Irgendetwas ist schief gegangen! */ "I`m sorry, Dave... I`m afraid. I can`t do that!";
+const ERROR_STR_DIV = /* "Division durch 0 ist nicht definiert." */ "Really, Dave, divide by 0!"
+
+startApp();
+function startApp()
+{
+	output(calculator(getNum1(),getNum2(),getOp()));
+}
+
+function getNum1()
+{
+	return parseInt(prompt("Zahl 1? "));
+}
+
+function getNum2()
+{
+	return parseInt(prompt("Zahl 2? "));
+}
+
+function getOp()
+{
+	return (prompt("OP? "));
+}
 
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
-output(calculator(3,2,"+"));
-output(calculator(3,2,"-"));
-output(calculator(3,2,"*"));
-output(calculator(3,2,":"));
-output(calculator(3,2,"/"));
-output(calculator(3,0,"/"));
-output(calculator(3,2,"#?!"));
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
 function calculator(a,b,op)
 {
 	switch (op)
