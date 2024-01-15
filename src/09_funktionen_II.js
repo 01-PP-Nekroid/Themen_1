@@ -60,7 +60,9 @@ function divide(a,b)
 	{
 		return ERROR_STR_DIV; // Ausnahme
 	}
-		return a / b; // Reguläres Verhalten
+	return a / b; // Reguläres Verhalten
+
+	// return b !== 0 ? a / b : ERROR_STR_DIV;
 }
 
 
