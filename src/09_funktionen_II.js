@@ -23,7 +23,7 @@ function startApp()
 
 function getNum1()
 {
-	return parseInt(prompt("Zahl 1? "));
+	return parseInt(prompt("Zahl 1? ")); // parseInt() für Zahlen
 }
 
 function getNum2()
