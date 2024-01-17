@@ -143,12 +143,23 @@ function getSentenceArr2(arr)
     const PUNCT = ".";
     let str = ""; // Anfangswert
 
+
+    // 1. Variante: Strukur GENAU erzeugen...
     for (let i = 0; i < arr.length; i++)
     {
-        str += arr[i] + GAP;
+        if (i != arr.length - 1) // wenn du noch nicht am ende des Arrays bist...
+        {
+            // entweder...
+            str += arr[i] + GAP;
+        } 
+        else
+        {
+            // oder
+            str += arr[i] + PUNCT;
+        }
     }
 
-    return str + PUNCT;
+    return str;
 }
 
 
