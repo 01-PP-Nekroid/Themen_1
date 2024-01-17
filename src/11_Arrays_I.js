@@ -145,7 +145,7 @@ function getSentenceArr2(arr)
 
 
     // 1. Variante: Strukur GENAU erzeugen...
-    for (let i = 0; i < arr.length; i++)
+    /* for (let i = 0; i < arr.length; i++)
     {
         if (i != arr.length - 1) // wenn du noch nicht am ende des Arrays bist...
         {
@@ -157,9 +157,15 @@ function getSentenceArr2(arr)
             // oder
             str += arr[i] + PUNCT;
         }
+    } */
+
+    // 2. Variante: Struktur erzeugen & trimmen
+    for (let i = 0; i < arr.length; i++)
+    {
+            str += arr[i] + GAP;
     }
 
-    return str;
+    return str.trim() + PUNCT;
 }
 
 
