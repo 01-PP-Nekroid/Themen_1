@@ -157,15 +157,21 @@ function getSentenceArr2(arr)
             // oder
             str += arr[i] + PUNCT;
         }
-    } */
+    } 
+    return str;
+    */
 
     // 2. Variante: Struktur erzeugen & trimmen
-    for (let i = 0; i < arr.length; i++)
+    /* for (let i = 0; i < arr.length; i++)
     {
             str += arr[i] + GAP;
     }
 
     return str.trim() + PUNCT;
+    */
+
+    // 3. Variante: Ausnutzen von generischen Funktionen...
+    return arr.join(GAP) + PUNCT;
 }
 
 
