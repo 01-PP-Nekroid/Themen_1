@@ -72,6 +72,14 @@ let baikal =
     }
 };
 
+output(baikal);
+output(baikal.value);
+output(baikal.value.deep);
+output(baikal.value.deep.deeper);
+output(baikal.value.deep.deeper.temerature);
+output(baikal.value.deep.deepest);
+
+
 // Modul: Ausgabe | Test
 //output("hi");
 function output(outputData) {
