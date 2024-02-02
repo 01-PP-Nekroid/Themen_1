@@ -57,12 +57,12 @@ const prompt = require('prompt-sync')({sigint: true});
 /******** Variante 3 *********/
 // Kompakt, aber schlecht lesbar, unflexibel
 
-console.log
-(
-    "Die Summe ist: " + 
-    (
-        parseFloat(prompt("Bitte Zahl 1 eingeben: "))
-        //parseFloat(prompt("Bitte Zahl 2 eingeben: "))
+// console.log
+// (
+//     "Die Summe ist: " + 
+//     (
+//         parseFloat(prompt("Bitte Zahl 1 eingeben: "))
+//         //parseFloat(prompt("Bitte Zahl 2 eingeben: "))
 
-    )
-);
+//     )
+// );
